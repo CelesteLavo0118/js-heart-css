@@ -5,11 +5,11 @@ var $p1 = $('main p:first-child');
 var $h2 = $('h2');
 var $li = $('li');
 var $img = $('img');
-
-var $ul = $('ul li:first-child');
-
+var $firstLi = $('li:first-child');
+var $lastLi = $('li:last-child');
 var $dl = $('dl');
 var $dt = $('dt');
+var $lastLi2 = $('li:last-child');
 
 $header.addClass('masthead');
 $h1.removeClass('big-heading');
@@ -18,6 +18,8 @@ $p1.addClass('intro');
 $h2.addClass('slug-head');
 $li.addClass('slug-list');
 $img.addClass('slug-img');
-
+$firstLi.addClass('slug-list-first');
+$lastLi.addClass('slug-list-last');
 $dl.addClass('classification');
 $dt.removeClass('big-label');
+$lastLi2.show();
